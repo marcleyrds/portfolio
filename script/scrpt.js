@@ -7,13 +7,13 @@ const createImage = (projectImage) => {
   elemImg.setAttribute('src', projectImage)
 
   elemPicture.appendChild(elemImg)
-  
+
   return elemPicture
 }
 
 const createStrong = (projectName) => {
   const elemStrong = document.createElement('strong')
-  elemStrong.innerText = projectName 
+  elemStrong.innerText = projectName
 
   return elemStrong
 }
@@ -21,41 +21,46 @@ const createStrong = (projectName) => {
 const createTags = (projectTags) => {
   const elemTags = document.createElement('div')
 
-    projectTags.forEach(tag => {
-      const elemTag = document.createElement('span')
-      elemTag.innertext = tag 
+  projectTags.forEach(tag => {
+    const elemTag = document.createElement('span')
+    elemTag.innertext = tag
 
-      elemTags.appendChild(elemTag)
-    })
+    elemTags.appendChild(elemTag)
+  })
 
-    return elemTags
+  return elemTags
 }
 
-const creatProject = (project) => {
-   const elemProject = document.createElement('a')
+const creatProject = (project, index) => {
+  const elemProject = document.createElement('a')
 
-    elemProject.setAttribute('href', project.link)
-    elemProject.setAttribute('target', '_blank')
-    
+  elemProject.setAttribute('href', project.link)
+  elemProject.setAttribute('target', '_blank')
 
-    elemProject.classList.add('project')
+  elemProject.setAttribute('data-aos', 'zom-in-up')
+  elemProject.setAttribute('data-aos-duration', '800')
+  elemProject.setAttribute('data-aos-easing', 'ease-in-out')
+  elemProject.setAttribute('data-aos-offset', '-100')
+  elemProject.setAttribute('data-aos-delay', 300 * (index + 1))
+
+  elemProject.classList.add('project')
 
 
-    //add picture 
-    elemProject.appendChild(createImage(project.image))
+  //add picture 
+  elemProject.appendChild(createImage(project.image))
 
-    //add strong
-    elemProject.appendChild(createStrong(project.name))
+  //add strong
+  elemProject.appendChild(createStrong(project.name))
 
-    // add tags
-    elemProject.appendChild(createTags(project.tags))
+  // add tags
+  elemProject.appendChild(createTags(project.tags))
 
-    return elemProject
+  return elemProject
 }
 
 const loadProjects = (projects) => {
-  projects.forEach(project => {
-    elemProjects.appendChild(creatProject(project))
+  projects.forEach((project, index) => {
+    elemProjects.appendChild(creatProject(project, index))
 
   });
 }
