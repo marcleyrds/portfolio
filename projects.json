@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Relogio",
+      "image": "./assets/git.png",
+      "tags": ["JavaScript", "css", "html"],
+      "link": "https://github.com/marcleyrds/Netflix"
+    },
+      {
+      "name": "netflix",
+      "image": "./assets/net.png",
+      "tags": ["html", "CSS"],
+      "link": "https://github.com/marcleyrds/Netflix"
+    },
+      {
+      "name": "Login Dark",
+      "image": "./assets/login].png",
+      "tags": ["JavaScript", "css", "html"],
+      "link": "https://github.com/marcleyrds/login-dark"
+    },
+    
+     {
+        "name": "Linktree",
+        "image": "./assets/links.png",
+        "tags": ["JavaScript", "css", "html"],
+        "link": "https://github.com/marcleyrds/tela-de"
+    },
+
+     {
+        "name": "Gerador de QR Code",
+        "image": "./assets/QR.png",
+        "tags": ["JavaScript", "css", "html"],
+        "link": "https://marcleyrds.github.io/QR/"
+    }
+    
+  ]
