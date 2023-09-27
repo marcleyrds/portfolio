@@ -26,7 +26,7 @@
     },
 
      {
-        "name": "Gerador de QR Code",
+        "name": "Gerador de QR code",
         "image": "./assets/QR.png",
         "tags": ["JavaScript", "css", "html"],
         "link": "https://marcleyrds.github.io/QR/"
