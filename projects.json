@@ -23,6 +23,13 @@
         "image": "./assets/links.png",
         "tags": ["JavaScript", "css", "html"],
         "link": "https://github.com/marcleyrds/tela-de"
+    },
+    
+    {
+        "name": "Gerador de QR code",
+        "image": "./assets/QR.png",
+        "tags": ["JavaScript", "css", "html"],
+        "link": "https://marcleyrds.github.io/QR/"
     }
     
   ]
