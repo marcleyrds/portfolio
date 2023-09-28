@@ -30,6 +30,13 @@
         "image": "./assets/Captura de tela 2023-09-27 182001.png",
         "tags": ["JavaScript", "css", "html"],
         "link": "https://github.com/marcleyrds/QR"
+    },
+       
+    {
+        "name": "Seu IMC",
+        "image": "./assets/imc.png",
+        "tags": ["JavaScript", "css", "html"],
+        "link": "https://github.com/marcleyrds/IMC"
     }
     
   ]
